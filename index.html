@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yashi Play</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b0b0f;
+      color: white;
+    }
+
+    header {
+      height: 65px;
+      background: #111116;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 18px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #ff3158;
+    }
+
+    .login {
+      background: #ff3158;
+      color: white;
+      border: none;
+      padding: 9px 16px;
+      border-radius: 20px;
+      font-size: 14px;
+    }
+
+    .hero {
+      min-height: 430px;
+      padding: 70px 25px 40px;
+      display: flex;
+      align-items: center;
+      background:
+        linear-gradient(to right, #08080c 20%, transparent),
+        linear-gradient(to top, #0b0b0f, transparent);
+    }
+
+    .hero-content {
+      max-width: 650px;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      color: #cccccc;
+      line-height: 1.6;
+      margin-bottom: 22px;
+      font-size: 16px;
+    }
+
+    .watch {
+      background: #ff3158;
+      color: white;
+      border: none;
+      padding: 13px 25px;
+      border-radius: 7px;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .section {
+      padding: 20px;
+    }
+
+    .section h2 {
+      margin-bottom: 15px;
+      font-size: 22px;
+    }
+
+    .movies {
+      display: flex;
+      gap: 14px;
+      overflow-x: auto;
+      padding-bottom: 12px;
+    }
+
+    .card {
+      min-width: 155px;
+      height: 220px;
+      background: linear-gradient(145deg, #24242c, #15151b);
+      border-radius: 9px;
+      display: flex;
+      align-items: flex-end;
+      padding: 12px;
+      font-weight: bold;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+    }
+
+    .card span {
+      background: rgba(0,0,0,0.65);
+      width: 100%;
+      padding: 8px;
+      border-radius: 5px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 35px 15px;
+      color: #888;
+      font-size: 13px;
+    }
+
+    @media (max-width: 600px) {
+      .hero {
+        min-height: 390px;
+      }
+
+      .hero h1 {
+        font-size: 32px;
+      }
+
+      .hero p {
+        font-size: 14px;
+      }
+
+      .card {
+        min-width: 140px;
+        height: 200px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">YASHI PLAY</div>
+    <button class="login">Login</button>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Entertainment की नई दुनिया</h1>
+
+      <p>
+        Yashi Play पर देखिए नई कहानियाँ, वेब सीरीज़,
+        फिल्में और शानदार मनोरंजन।
+      </p>
+
+      <button class="watch">▶ अभी देखें</button>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>🔥 Trending Now</h2>
+
+    <div class="movies">
+      <div class="card">
+        <span>Hanuman Kalyug</span>
+      </div>
+
+      <div class="card">
+        <span>Arya & Veer</span>
+      </div>
+
+      <div class="card">
+        <span>Desi Comedy</span>
+      </div>
+
+      <div class="card">
+        <span>New Stories</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>🎬 Yashi Originals</h2>
+
+    <div class="movies">
+      <div class="card">
+        <span>Yashi Original 1</span>
+      </div>
+
+      <div class="card">
+        <span>Yashi Original 2</span>
+      </div>
+
+      <div class="card">
+        <span>Coming Soon</span>
+      </div>
+    </div>
+  </section
